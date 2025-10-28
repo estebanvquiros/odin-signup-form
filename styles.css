@@ -1,5 +1,6 @@
 :root {
     --color-light-1: #ffffff;
+    --color-light-2: #f6f5f4;
     --color-dark-5: #000000;
     --color-dark-5t: #00000070;
 }
@@ -98,5 +99,30 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .form-column {
+    display: flex;
     flex: 2;
+    flex-direction: column;
+}
+
+.header-section {
+    background-color: var(--color-light-2);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex: 1.08;
+    font-size: 1.3rem;
+    padding: 0 70px 0 30px;
+}
+
+.header-section p:last-child {
+    margin: 20px 0 20px 0;
+}
+
+.form-section {
+    flex: 1;
+}
+
+.footer-section {
+    background-color: var(--color-light-2);
+    flex: 1;
 }
