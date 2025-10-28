@@ -1,3 +1,19 @@
+:root {
+    --color-light-1: #ffffff;
+    --color-dark-5: #000000;
+    --color-dark-5t: #00000070;
+}
+
+@font-face {
+    font-family: 'Norse';
+    src: url('./assets/fonts/Norse-Bold.woff2') format('woff2'),
+        url('./assets/fonts/Norse-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -7,6 +23,11 @@
 }
 
 body {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
 }
@@ -30,4 +51,52 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
     text-wrap: balance;
+}
+
+.container {
+    box-shadow: 0 0 15px 5px var(--color-dark-5t);
+    display: flex;
+    height: 50rem;
+    width: 65rem;
+}
+
+.image-column {
+    align-items: center;
+    background: url(./assets/images/banner.jpg) center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.brand {
+    align-items: center;
+    background-color: var(--color-dark-5t);
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 10rem;
+    width: 100%;
+}
+
+.brand-name {
+    color: var(--color-light-1);
+    font-family: 'Norse', sans-serif;
+    font-size: 5rem;
+}
+
+.brand-logo {
+    height: 5rem;
+}
+
+.image-attribution,
+.image-attribution a {
+    color: var(--color-light-1);
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
+}
+
+.form-column {
+    flex: 2;
 }
