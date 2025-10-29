@@ -32,7 +32,7 @@
             </div>
             <div class="form-section">
                 <h1 class="form-title">Let's do this!</h1>
-                <form action="https://httpbin.org/post" method="post">
+                <form action="https://httpbin.org/post" method="post" id="signup-form">
                     <div class="form-row">
                         <div class="form-field">
                             <label for="firstName">First name</label>
@@ -65,7 +65,10 @@
                     </div>
                 </form>
             </div>
-            <div class="footer-section"></div>
+            <div class="footer-section">
+                <button type="submit" class="create-account-btn" form="signup-form">Create Account</button>
+                <p class="login-message">Already have an account? <a href="#">Log in</a></p>
+            </div>
         </div>
     </div>
     

@@ -6,6 +6,10 @@
 
     --color-blue-3: #3584e4;
 
+    --color-green-1: #8e9b81;
+    --color-green-2: #596D48;
+    --color-green-3: #3c4831;
+
     --color-red-3: #e01b24;
 
     --color-dark-1: #77767b;
@@ -184,5 +188,43 @@ input[type="password"]:user-invalid {
 
 .footer-section {
     background-color: var(--color-light-2);
+    display: flex;
     flex: 1;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 20px 70px 20px 30px;
+}
+
+.create-account-btn {
+    background-color: var(--color-green-2);
+    border: none;
+    border-radius: 10px;
+    color: var(--color-light-1);
+    cursor: pointer;
+    font-weight: bold;
+    max-width: 13rem;
+    margin-top: 15px;
+    padding: 15px 20px 15px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.create-account-btn:hover {
+    background-color: var(--color-green-1);
+}
+
+.create-account-btn:active {
+    background-color: var(--color-green-3);
+}
+
+.login-message {
+    font-weight: 500;
+}
+
+.login-message a {
+    text-decoration: none;
+    color: var(--color-green-3);
+}
+
+.login-message a:hover {
+    text-decoration: underline;
 }
