@@ -1,6 +1,16 @@
 :root {
     --color-light-1: #ffffff;
     --color-light-2: #f6f5f4;
+    --color-light-3: #deddda;
+    --color-light-5: #9a9996;
+
+    --color-blue-2: #62a0ea;
+
+    --color-red-1: #f66151;
+
+    --color-dark-1: #77767b;
+    --color-dark-2: #5e5c64;
+    --color-dark-3: #3d3846;
     --color-dark-5: #000000;
     --color-dark-5t: #00000070;
 }
@@ -111,7 +121,7 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: flex-end;
     flex: 1.08;
     font-size: 1.3rem;
-    padding: 0 70px 0 30px;
+    padding: 0 70px 20px 30px;
 }
 
 .header-section p:last-child {
@@ -119,7 +129,55 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .form-section {
+    display: flex;
     flex: 1;
+    flex-direction: column;
+    padding: 20px 70px 20px 30px;
+}
+
+.form-title {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.form-row {
+    display: flex;
+    gap: 2rem;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    color: var(--color-dark-3);
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+}
+
+input {
+    border: 1px solid var(--color-light-3);
+    border-radius: 4px;
+    width: 15rem;
+}
+
+input:focus {
+    outline: 2px solid var(--color-blue-2);
+    box-shadow: 0 0 5px 1px var(--color-dark-5t);
+}
+
+input[type="password"]:invalid {
+    outline: 2px solid var(--color-red-1);
 }
 
 .footer-section {
