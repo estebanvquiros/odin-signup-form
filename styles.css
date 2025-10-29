@@ -34,7 +34,7 @@
 }
 
 body {
-    font-family: "Roboto", sans-serif;
+    font-family: "Reddit Sans", sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -120,7 +120,8 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
     justify-content: flex-end;
     flex: 1.08;
-    font-size: 1.3rem;
+    font-size: 1.25rem;
+    font-weight: bold;
     padding: 0 70px 20px 30px;
 }
 
