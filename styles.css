@@ -4,9 +4,9 @@
     --color-light-3: #deddda;
     --color-light-5: #9a9996;
 
-    --color-blue-2: #62a0ea;
+    --color-blue-3: #3584e4;
 
-    --color-red-1: #f66151;
+    --color-red-3: #e01b24;
 
     --color-dark-1: #77767b;
     --color-dark-2: #5e5c64;
@@ -174,12 +174,12 @@ input {
 }
 
 input:focus {
-    outline: 2px solid var(--color-blue-2);
+    outline: 2px solid var(--color-blue-3);
     box-shadow: 0 0 5px 1px var(--color-dark-5t);
 }
 
 input[type="password"]:user-invalid {
-    outline: 2px solid var(--color-red-1);
+    outline: 2px solid var(--color-red-3);
 }
 
 .footer-section {
